@@ -1,0 +1,139 @@
+
+$height: 100%;
+@mixin backgroundImage {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $font;
+}
+.main {
+  width: 100%;
+  height: fit-content;
+  .header {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    border-bottom: 1.5px solid;
+    border-color: rgb(230, 225, 225);
+    .navItems {
+      width: 33%;
+      padding: 10px;
+      display: flex;
+      gap: 20px;
+      i {
+        margin-top: 25px;
+      }
+      p {
+        font-size: 15px;
+        font-weight: 500;
+        margin-top: 12px;
+        cursor: pointer;
+      }
+      .inputContainer {
+        margin: auto;
+        width: 100%;
+        height: 100%;
+        input {
+          width: 95%;
+          height: 95%;
+          padding-left: 15px;
+          border-style: none;
+          background-color: rgb(248, 245, 245);
+        }
+      }
+      .navIcons {
+        width: 100%;
+        text-align: center;
+        height: 100%;
+        display: flex;
+        justify-content: end;
+        gap: 30px;
+        .singleIcon {
+          text-align: center;
+          cursor: pointer;
+        
+        }
+        p {
+          font-size: 10px;
+          margin-top: 5px;
+         
+        }
+      }
+    }
+  }
+
+  .dropIcons {
+    margin: auto;
+    width: 100%;
+    height: 50px;
+    border-bottom: 1.5px solid;
+    border-color: rgb(230, 225, 225);
+    .dropContainer {
+      width: 80%;
+      margin: auto;
+      display: flex;
+      justify-content: space-evenly;
+      height: 100%;
+      .drop {
+        width: 10%;
+        height: 100%;
+        text-align: center;
+        p {
+          margin-top: 13.5px;
+          font-size: 13.5px;
+          font-weight: 700;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+.cakeLinks {
+  margin-top: 28px;
+  width: 100%;
+  height: 450px;
+  .cakeContainer {
+    width: 95%;
+    display: flex;
+    margin: auto;
+    justify-content: space-evenly;
+    height: 100%;
+    .cake {
+      width: 30%;
+      height: 100%;
+      border-radius: 25px;
+      .text {
+        margin-top: 105px;
+        margin-left: 10px;
+      }
+      h1 {
+        color: white;
+        font-size: 150px;
+        line-height: 140px;
+      }
+      h2 {
+        color: white;
+        font-size: 30px;
+        line-height: 25px;
+      }
+    }
+    .fineArt {
+      background-image: url("https://tse4.mm.bing.net/th?id=OIP.C1nevB__9O-Cf4hW_vOk0gHaLH&pid=Api&P=0");
+      @include backgroundImage;
+    }
+    .iceCreamCake {
+      background-image: url("https://www.alsothecrumbsplease.com/wp-content/uploads/2019/06/Peanut-Butter-Ice-Cream-Cake-17.jpg");
+      @include backgroundImage;
+    }
+    .oreoCake {
+      background-image: url("https://tse1.mm.bing.net/th?id=OIP.EFNXUe36XIQGIk3FyTMsOgHaLH&pid=Api&P=0");
+      @include backgroundImage;
+    }
+  }
+}
